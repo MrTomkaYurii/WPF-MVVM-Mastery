@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel;
 
-namespace MVVM_Example_03_Locator.Models
+namespace MVVM_Example_05_Commands.Models
 {
     public class Student : INotifyPropertyChanged
     {
-        private string firstname;
-        private string lastname;
+        private string firstname = string.Empty;
+        private string lastname = string.Empty;
 
         public string FirstName
         {

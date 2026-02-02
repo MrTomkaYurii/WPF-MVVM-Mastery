@@ -1,17 +1,12 @@
-﻿using MVVM_Example_03_Locator.Models;
+﻿using MVVM_Example_05_Commands.Models;
 using System.Collections.ObjectModel;
 
-namespace MVVM_Example_03_Locator.ViewModels
+namespace MVVM_Example_05_Commands.ViewModels
 {
     public class StudentViewModel
     {
-        public StudentViewModel()
-        {
-            LoadStudents();
-        }
-
-        public ObservableCollection<Student> Students { get; set; }
-
+        public ObservableCollection<Student> Students { get; set; } = new();
+        //  { get; set; }
         public void LoadStudents()
         {
             ObservableCollection<Student> students = new ObservableCollection<Student>();
@@ -21,6 +16,7 @@ namespace MVVM_Example_03_Locator.ViewModels
             students.Add(new Student { FirstName = "ZZ", LastName = "MM" });
 
             Students = students;
+
         }
     }
 }

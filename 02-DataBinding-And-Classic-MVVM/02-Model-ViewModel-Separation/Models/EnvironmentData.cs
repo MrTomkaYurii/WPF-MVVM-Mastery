@@ -34,7 +34,7 @@ namespace DataContextExamples.Models
             Temperature = 70;
             Humidity = 50;
             // Create a timer with a two second interval.
-            var aTimer = new Timer(2000);
+            var aTimer = new System.Timers.Timer(2000);
             // Hook up the Elapsed event for the timer. 
             aTimer.Elapsed += OnTimedEvent;
             aTimer.Enabled = true;
