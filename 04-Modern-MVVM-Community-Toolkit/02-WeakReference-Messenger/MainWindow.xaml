@@ -1,0 +1,31 @@
+<Window x:Class="MessengerShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:MessengerShowcase.ViewModels"
+        Title="WeakReferenceMessenger (Decoupled Pub/Sub) (.NET 10)" Height="480" Width="750"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <vm:SenderViewModel x:Key="SenderVM"/>
+        <vm:ReceiverViewModel x:Key="ReceiverVM"/>
+    </Window.Resources>
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Sender View (Publisher)" Margin="5" DataContext="{StaticResource SenderVM}">
+            <StackPanel Margin="10">
+                <TextBlock Text="Publish message to independent ViewModels without direct references or memory leaks." TextWrapping="Wrap" Margin="0,0,0,10"/>
+                <TextBox Text="{Binding NotificationText, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Padding="5"/>
+                <Button Content="📢 Broadcast Notification" Command="{Binding SendMessageCommand}" Margin="0,10" Height="36"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Grid.Column="1" Header="Receiver View (Subscriber)" Margin="5" DataContext="{StaticResource ReceiverVM}">
+            <Grid Margin="10">
+                <ListBox ItemsSource="{Binding ReceivedMessages}"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
