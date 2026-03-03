@@ -1,0 +1,32 @@
+<Window x:Class="ControlTemplatesShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Custom ControlTemplates from Scratch (.NET 10)" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <!-- Modern Pill Button Template -->
+        <ControlTemplate x:Key="PillButtonTemplate" TargetType="Button">
+            <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="20"
+                    BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                    Padding="{TemplateBinding Padding}">
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="#3B82F6"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter TargetName="border" Property="Background" Value="#1D4ED8"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid Margin="30">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Custom ControlTemplate Demonstration" FontSize="18" FontWeight="Bold"/>
+            <Button Content="Standard Default WPF Button" Width="220" Height="36"/>
+            <Button Content="Custom Pill Button" Template="{StaticResource PillButtonTemplate}"
+                    Background="#2563EB" Foreground="White" Width="220" Height="42" FontWeight="SemiBold"/>
+        </StackPanel>
+    </Grid>
+</Window>
