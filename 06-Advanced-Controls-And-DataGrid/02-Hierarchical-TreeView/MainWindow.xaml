@@ -1,0 +1,26 @@
+<Window x:Class="HierarchicalTreeViewShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:m="clr-namespace:HierarchicalTreeViewShowcase.Models"
+        Title="HierarchicalDataTemplate TreeView (.NET 10)" Height="450" Width="550"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Recursive TreeView Navigation" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <TreeView Grid.Row="1" x:Name="FolderTree">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type m:DirectoryItem}" ItemsSource="{Binding Children}">
+                    <StackPanel Orientation="Horizontal" Margin="2">
+                        <TextBlock Text="📁 " FontSize="14"/>
+                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>
