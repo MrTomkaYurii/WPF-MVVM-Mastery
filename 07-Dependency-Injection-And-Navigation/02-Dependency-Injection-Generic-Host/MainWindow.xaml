@@ -1,0 +1,13 @@
+<Window x:Class="GenericHostShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Generic Host DI (.NET 10)" Height="350" Width="550"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="25">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="{Binding Title}" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+            <TextBlock Text="Injected User:" FontWeight="SemiBold"/>
+            <TextBlock Text="{Binding CurrentUser}" FontSize="16" Foreground="#2563EB" Margin="0,5,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>

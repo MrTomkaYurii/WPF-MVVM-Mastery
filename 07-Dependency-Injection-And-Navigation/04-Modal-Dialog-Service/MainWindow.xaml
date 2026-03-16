@@ -1,0 +1,13 @@
+<Window x:Class="DialogServiceShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MVVM DialogService (.NET 10)" Height="350" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="25">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Dialog Service Pattern (Decoupled from View)" FontSize="18" FontWeight="Bold"/>
+            <Button Content="Trigger Delete Confirmation Dialog" Command="{Binding DeleteRecordCommand}" Height="40"/>
+            <TextBlock Text="{Binding ResultMessage}" FontSize="15" FontWeight="SemiBold" Foreground="#2563EB"/>
+        </StackPanel>
+    </Grid>
+</Window>

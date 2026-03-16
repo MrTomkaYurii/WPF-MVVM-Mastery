@@ -1,0 +1,28 @@
+<Window x:Class="NavigationShowcase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:NavigationShowcase.ViewModels"
+        Title="ViewModel-First Navigation (.NET 10)" Height="450" Width="650"
+        WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <vm:MainNavigationViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <ResourceDictionary Source="Views/Pages.xaml"/>
+    </Window.Resources>
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+            <Button Content="Home" Command="{Binding NavigateHomeCommand}" Width="100" Height="34" Margin="0,0,5,0"/>
+            <Button Content="Settings" Command="{Binding NavigateSettingsCommand}" Width="100" Height="34" Margin="0,0,5,0"/>
+            <Button Content="Reports" Command="{Binding NavigateReportsCommand}" Width="100" Height="34"/>
+        </StackPanel>
+
+        <!-- Dynamic View host resolves appropriate View from DataTemplate -->
+        <ContentControl Grid.Row="1" Content="{Binding CurrentViewModel}"/>
+    </Grid>
+</Window>
