@@ -1,0 +1,57 @@
+<Solution>
+  <Folder Name="/01-XAML-And-Layout-Foundations/">
+    <Project Path="01-XAML-And-Layout-Foundations/01-Layout-Panels-Showcase/01-Layout-Panels-Showcase.csproj" />
+  </Folder>
+  <Folder Name="/02-DataBinding-And-Classic-MVVM/">
+    <Project Path="02-DataBinding-And-Classic-MVVM/03-Value-Converters-And-MultiBinding/03-Value-Converters-And-MultiBinding.csproj" />
+    <Project Path="02-DataBinding-And-Classic-MVVM/04-ObservableCollection-And-CollectionView/04-ObservableCollection-And-CollectionView.csproj" />
+  </Folder>
+  <Folder Name="/02-DataBinding-And-Classic-MVVM/01-Basic-INotifyPropertyChanged/">
+    <Project Path="02-DataBinding-And-Classic-MVVM/01-Basic-INotifyPropertyChanged/MVVM_Example_01.csproj" />
+  </Folder>
+  <Folder Name="/02-DataBinding-And-Classic-MVVM/02-Model-ViewModel-Separation/">
+    <Project Path="02-DataBinding-And-Classic-MVVM/02-Model-ViewModel-Separation/MVVM_Example_02.csproj" />
+  </Folder>
+  <Folder Name="/03-Commands-And-Interactions/">
+    <Project Path="03-Commands-And-Interactions/02-Async-RelayCommand/02-Async-RelayCommand.csproj" />
+    <Project Path="03-Commands-And-Interactions/03-Xaml-Behaviors-EventToCommand/03-Xaml-Behaviors-EventToCommand.csproj" />
+  </Folder>
+  <Folder Name="/03-Commands-And-Interactions/01-RelayCommand-Basics/">
+    <Project Path="03-Commands-And-Interactions/01-RelayCommand-Basics/MVVM_Example_04_Commands.csproj" />
+  </Folder>
+  <Folder Name="/04-Modern-MVVM-Community-Toolkit/">
+    <Project Path="04-Modern-MVVM-Community-Toolkit/01-CommunityToolkit-Basics/01-CommunityToolkit-Basics.csproj" />
+    <Project Path="04-Modern-MVVM-Community-Toolkit/02-WeakReference-Messenger/02-WeakReference-Messenger.csproj" />
+    <Project Path="04-Modern-MVVM-Community-Toolkit/03-ObservableValidator-And-Validation/03-ObservableValidator-And-Validation.csproj" />
+  </Folder>
+  <Folder Name="/05-Styles-Templates-And-Resources/">
+    <Project Path="05-Styles-Templates-And-Resources/01-Resources-And-MergedDictionaries/01-Resources-And-MergedDictionaries.csproj" />
+    <Project Path="05-Styles-Templates-And-Resources/02-ControlTemplates-From-Scratch/02-ControlTemplates-From-Scratch.csproj" />
+    <Project Path="05-Styles-Templates-And-Resources/03-DataTemplates-And-Selectors/03-DataTemplates-And-Selectors.csproj" />
+    <Project Path="05-Styles-Templates-And-Resources/04-Triggers-And-Animations/04-Triggers-And-Animations.csproj" />
+  </Folder>
+  <Folder Name="/06-Advanced-Controls-And-DataGrid/">
+    <Project Path="06-Advanced-Controls-And-DataGrid/01-DataGrid-Mastery/01-DataGrid-Mastery.csproj" />
+    <Project Path="06-Advanced-Controls-And-DataGrid/02-Hierarchical-TreeView/02-Hierarchical-TreeView.csproj" />
+    <Project Path="06-Advanced-Controls-And-DataGrid/03-Custom-And-UserControls/03-Custom-And-UserControls.csproj" />
+  </Folder>
+  <Folder Name="/07-Dependency-Injection-And-Navigation/">
+    <Project Path="07-Dependency-Injection-And-Navigation/02-Dependency-Injection-Generic-Host/02-Dependency-Injection-Generic-Host.csproj" />
+    <Project Path="07-Dependency-Injection-And-Navigation/03-ViewModel-First-Navigation/03-ViewModel-First-Navigation.csproj" />
+    <Project Path="07-Dependency-Injection-And-Navigation/04-Modal-Dialog-Service/04-Modal-Dialog-Service.csproj" />
+  </Folder>
+  <Folder Name="/07-Dependency-Injection-And-Navigation/01-Classic-ViewModelLocator/">
+    <Project Path="07-Dependency-Injection-And-Navigation/01-Classic-ViewModelLocator/MVVM_Example_03_Locator.csproj" />
+  </Folder>
+  <Folder Name="/08-Multithreading-And-Performance/">
+    <Project Path="08-Multithreading-And-Performance/01-Dispatcher-And-Background-Tasks/01-Dispatcher-And-Background-Tasks.csproj" />
+    <Project Path="08-Multithreading-And-Performance/02-UI-Virtualization-And-Memory/02-UI-Virtualization-And-Memory.csproj" />
+  </Folder>
+  <Folder Name="/09-Modern-UI-And-Fluent-Design/">
+    <Project Path="09-Modern-UI-And-Fluent-Design/01-Modern-Theming-And-DarkMode/01-Modern-Theming-And-DarkMode.csproj" />
+  </Folder>
+  <Folder Name="/10-Capstone-Production-Application/">
+    <Project Path="10-Capstone-Production-Application/TaskMaster.Studio.Tests/TaskMaster.Studio.Tests.csproj" />
+    <Project Path="10-Capstone-Production-Application/TaskMaster.Studio/TaskMaster.Studio.csproj" />
+  </Folder>
+</Solution>
